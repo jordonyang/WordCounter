@@ -11,7 +11,7 @@ parameters for counting operation
 - -l: return the total lines of the operating file
 - -w: return the total words of the operating file
 - -c: return the total characters of the operating file
-- -c: return the total code lines, blank lines and annotation lines of the operating file
+- -a: return the total code lines, blank lines and annotation lines of the operating file
 
 #### targeting
 parameters for specifying operation 

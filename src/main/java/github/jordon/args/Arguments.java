@@ -2,6 +2,11 @@ package github.jordon.args;
 
 import github.jordon.processor.*;
 
+/**
+ * 参数枚举类
+ * 可通过参数获取相应的处理器（单例）和提示信息
+ * @author Jordon
+ */
 public enum Arguments {
 
     CHARS("-c", new CharProcessor(), "char count"),
