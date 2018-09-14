@@ -37,7 +37,7 @@ public class AppEntryTest {
      */
     @Test
     public void testFileDoesNotExist() {
-        String[] args = {"-l", path + "bla bla"};
+        String[] args = {"-l", path};
         try {
             AppEntry.main(args);
         } catch (Exception e) {

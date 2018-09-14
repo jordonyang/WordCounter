@@ -38,7 +38,8 @@ public class AnnotationAndCodeProcessor extends BaseProcessor {
     @Override
     public void printInfo() {
         System.out.println("\tannotation lines: " + annotationCount + "\r\n" +
-                "\tcode lines: " + codeLineCount + "\r\n" + "\tblank lines: " + blankLineCount);
+                "\tcode lines: " + codeLineCount + "\r\n" + "\tblank lines: "
+                + blankLineCount);
         super.printInfo();
     }
 

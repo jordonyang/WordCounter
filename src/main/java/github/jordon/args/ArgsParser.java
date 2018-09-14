@@ -98,13 +98,6 @@ public class ArgsParser {
                 System.out.println("args " + args[i] + " does not exist");
             }
         }
-//        if (result != null) {
-//            BaseProcessor temp = result;
-//            while (temp != null) {
-//                System.out.println(temp);
-//                temp = temp.next;
-//            }
-//        }
         return result;
     }
 }

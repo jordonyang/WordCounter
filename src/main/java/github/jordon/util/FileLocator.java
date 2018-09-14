@@ -10,35 +10,11 @@ import java.util.List;
 /**
  * 根据命令中给定的最后一个参数，
  * 即文件名或者匹配模式获取所有待处理的文件
- *
  * @author Jordon
  */
 public class FileLocator {
-
     // 存放递归遍历中匹配到的文件
     private List<File> files = new ArrayList<>();
-
-    /**
-     * 选择文件
-     * @return 选中的文件集
-     */
-    public List<File> chooseFiles() {
-        // 设置父窗体
-        JFrame frame = new JFrame("父窗体");
-        frame.setSize(510, 350);
-        frame.setLocation(200, 200);
-        frame.setLayout(new FlowLayout());
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-        // 创建文件选择器
-        JFileChooser fileChooser = new JFileChooser(".");
-        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
-        fileChooser.setMultiSelectionEnabled(true);
-        fileChooser.showOpenDialog(frame);
-        // 返回选中的文件集
-        return Arrays.asList(fileChooser.getSelectedFiles());
-    }
 
     /**
      * 获取待处理目标文件集
@@ -113,4 +89,27 @@ public class FileLocator {
             }
         }
     }
+
+    /**
+     * 选择文件
+     * @return 选中的文件集
+     */
+    public List<File> chooseFiles() {
+        // 设置父窗体
+        JFrame frame = new JFrame("父窗体");
+        frame.setSize(510, 350);
+        frame.setLocation(200, 200);
+        frame.setLayout(new FlowLayout());
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+        // 创建文件选择器
+        JFileChooser fileChooser = new JFileChooser(".");
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        fileChooser.setMultiSelectionEnabled(true);
+        fileChooser.showOpenDialog(frame);
+        // 返回选中的文件集
+        return Arrays.asList(fileChooser.getSelectedFiles());
+    }
+
 }

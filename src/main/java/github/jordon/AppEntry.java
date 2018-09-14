@@ -39,9 +39,11 @@ public class AppEntry {
      */
     private static String getUsage() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Usage:" + "\t wc.exe [parameter] [file_name]\r\n"+ "parameters:\n");
+        stringBuilder.append("Usage:" + "\t wc.exe [parameter] [file_name]\r\n"
+                                        + "parameters:\n");
         for (Arguments arguments : Arguments.values()) {
-            stringBuilder.append("\t\t").append(arguments.getArg()).append("\t").append(arguments.getMsg()).append("\r\n");
+            stringBuilder.append("\t\t").append(arguments.getArg()).append("\t").
+                            append(arguments.getMsg()).append("\r\n");
         }
         return stringBuilder.toString();
     }
