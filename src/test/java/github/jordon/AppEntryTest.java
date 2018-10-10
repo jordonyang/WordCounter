@@ -3,6 +3,8 @@ package github.jordon;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class AppEntryTest {
     private String path = "E:\\projects\\Example.java";
 
@@ -139,4 +141,15 @@ public class AppEntryTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testStrs() {
+        in("s");
+    }
+
+    private void in(String...strs) {
+        System.out.println(Arrays.toString(strs));
+        System.out.println(strs.length);
+    }
+
 }
